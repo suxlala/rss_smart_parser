@@ -1,0 +1,14 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Smart RSS Parser Setup",
+        "data": {
+          "name": "RSS feed name",
+          "url": "RSS Feed URL",
+          "limit": "Number of articles to fetch"
+        }
+      }
+    }
+  }
+}

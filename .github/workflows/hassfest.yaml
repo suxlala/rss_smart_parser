@@ -12,4 +12,11 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-# ... a többi rész marad változatlan ...
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Hassfest validation
+        uses: home-assistant/actions/hassfest@master

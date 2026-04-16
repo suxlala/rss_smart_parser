@@ -5,7 +5,8 @@
 ![HA](https://img.shields.io/badge/Home%20Assistant-2024.1+-green)
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 ![downloads](https://img.shields.io/github/downloads/suxlala/rss_smart_parser/total.svg)
-![Overview](https://github.com/suxlala/rss-smart-parser/blob/main/cardoverview.png)
+
+![Overview](https://github.com/suxlala/rss-smart-parser/cardoverview.png)
 
 ## What is Smart RSS Parser ?
 

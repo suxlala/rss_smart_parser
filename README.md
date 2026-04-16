@@ -52,5 +52,5 @@ Click "Add integration" and search for `Smart RSS Parser`
 Add an item:
 - Give a `name` to the RSS feed source and the sensor
 - Add the `URL` link of the RSS feed (in the form of _https://yourRSSfeed.com/feed_)
-- Define a `number` for the max number of the latest news articles to be extracted
+- Define a `limit` for the max number of the latest news articles to be extracted
   

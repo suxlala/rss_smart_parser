@@ -19,7 +19,7 @@ A Home Assistant Integration to easily create RSS feed sensors from the UI. It g
 - 🏷️ Sensors will grab `title`, `publication date`, `link`, `description`, and `image` fields
 - 🏞️ Any type of image will be extracted from any RSS structure (unlike Feedparser)
 - ⌚️ Sensors will look for new content and update every 10 minutes
-- 🪪 Display extracted articles on your Dashboard with a highly customisable, flexible custom card, the RSS News Card
+- 🪪 Display extracted articles on your Dashboard with a highly customisable, flexible custom card, the [RSS News Card](https://github.com/suxlala/rss-news-card)
  
 
 ## Installation

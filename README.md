@@ -1,69 +1,48 @@
-# rss_smart_parser
-An integration to easily create RSS feed sensors from the UI. It goes beyond Feedparser and parses all kind of RSS feed structures, extracting clean text as well as all type of pictures.
-
+# Smart RSS Parser
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
 ![version](https://img.shields.io/badge/version-1.0.0-blue)
 ![HA](https://img.shields.io/badge/Home%20Assistant-2024.1+-green)
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
-
+![downloads](https://img.shields.io/github/downloads/suxlala/rss_smart_parser/total.svg)
 ![Overview](https://github.com/suxlala/rss-news-card/blob/main/cardoverview.png)
 
-## What is RSS News Card ?
+## What is Smart RSS Parser ?
 
-A scrollable and highly customisable RSS newsfeed reader card for Home Assistant Dashboard, with multi-source support, automatic language detection, and full visual editor. RSS News Card is designed to scrape the content of various types of RSS feeds with pictures and display it on your HA Dashboard the way you want, with many options to tweak.
+A Home Assistant Integration to easily create RSS feed sensors from the UI. It goes beyond Feedparser and parses all kind of RSS feed structures, extracting clean text as well as all type of pictures. 
 
 ### Features
 
-- 📰 Multiple RSS sources in a single card, sorted by date/time
-- 🌍 Automatic language & date format detection from Home Assistant settings
-- 📱 iOS-compatible scrolling, with adjustable card size
-- 🎨 Full visual editor with color picker, toggle switches, and font size controls
-- ⚠️ Built-in sensor diagnostics with setup instructions
-- 🌐 Community localization support (English, Hungarian, German included)
-- 🏷️ News source labels
-- 💪🏻 Flexible layout
+- 📰 Create unlimited number of RSS feed sensors
+- 🎨 No need to add YAML codes to your config, just add sensors from the UI
+- 🏷️ Sensors will grab <title>, <publication date>, <link>, <description>, and <image> fields
+- 🏞️ Any type of image will be extracted from any RSS structure (unlike Feedparser)
+- 🪪 Display extracted articles on your Dashboard with a highly customisable, flexible custom card, the RSS News Card
  
 
 ## Installation
 
-### HACS (Recommended)
+### Using HACS  
 
-[![Open HACS Repository](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=suxlala&repository=rss-news-card&category=plugin)
+If you dont' have [HACS](https://hacs.xyz) installed yet, I highly recommend it.  
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=suxlala&repository=rss_smart_parser&category=integration) or search for `Smart RSS Parser`.
 
-> If the button doesn't work, add manually:
+### Manual  
 
-1. Go to the HACS store 
-2. Click on the 3 dots in the upper right corner
-3. Select Custom repos and add the url `https://github.com/suxlala/rss-news-card` 
-4. Choose Dashboard as a type
+Download the `rss_smart_parser` directory and place it in your `/config/custom_component/` folder.
 
-Then, in Home Assistant's global settings, add the resource:
+### ------------
+After installation you need to **restart** Home-Assistant before using the integration.
 
-1. Go to **Settings → Dashboards → Three-dots menu → Resources** in the top right
-2. Click **+ Add Resource** button in the bottom right
-3. Enter in the following:
-    * **URL:** /local/community/rss-news-card/rss-news-card.js
-    * **Resource Type:** JavaScript Module
-4. Click Create
-**Note:** If you do not see the Resources menu, you will need to enable _Advanced Mode_ in your _User Profile_
 
-_or_
 
-### Manual Installation
+## Configuration  
 
-1. Download `rss-news-card.js` file from the latest release.
-2. Put `rss-news-card.js` file into `config/www/community/rss-news-card/` folder.
-3. Add reference to `rss-news-card.js` in Dashboard. Either as above, using UI in Dashboard settings
-	_or_
-   - **Using YAML:** Add following code to `lovelace` section.
-     ```yaml
-     resources:
-       - url: /local/community/rss-news-card/rss-news-card.js
-         type: module
-     ```
+### Setup
 
-## Configuration
+[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=rss_smart_parser)
 
-For every RSS news feed you want to track, create an individual `command_line` sensor in `configuration.yaml`. Copy and paste the YAML code below and amend it with your selected news feed source name and RSS web URL.
-Put more sensors one by one under one 'command_line:' line.
+If you don't have [My Home Assistant](https://my.home-assistant.io/) redirects set up, go to Settings -> Devices & Services -> 
+Click "Add integration" and search for `Smart RSS Parser`
+
+

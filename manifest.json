@@ -1,0 +1,10 @@
+{
+  "domain": "rss_smart_parser",
+  "name": "Smart RSS Parser",
+  "documentation": "https://github.com/suxlala/rss_smart_parser",
+  "dependencies": [],
+  "codeowners": ["@suxlala"],
+  "version": "1.0.0",
+  "config_flow": true,
+  "iot_class": "cloud_polling"
+}

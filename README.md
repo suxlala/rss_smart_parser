@@ -6,7 +6,7 @@
 ![license](https://img.shields.io/badge/license-MIT-lightgrey)
 ![downloads](https://img.shields.io/github/downloads/suxlala/rss_smart_parser/total.svg)
 
-![Overview](https://github.com/suxlala/rss-smart-parser/cardoverview.png)
+![Overview](https://github.com/suxlala/rss_smart_parser/blob/main/cardoverview.png)
 
 ## What is Smart RSS Parser ?
 
@@ -18,6 +18,7 @@ A Home Assistant Integration to easily create RSS feed sensors from the UI. It g
 - 🎨 No need to add YAML codes to your config, just add sensors from the UI
 - 🏷️ Sensors will grab `title`, `publication date`, `link`, `description`, and `image` fields
 - 🏞️ Any type of image will be extracted from any RSS structure (unlike Feedparser)
+- ⌚️ Sensors will look for new content and update every 10 minutes
 - 🪪 Display extracted articles on your Dashboard with a highly customisable, flexible custom card, the RSS News Card
  
 
@@ -46,4 +47,10 @@ After installation you need to **restart** Home-Assistant before using the integ
 If you don't have [My Home Assistant](https://my.home-assistant.io/) redirects set up, go to Settings -> Devices & Services -> 
 Click "Add integration" and search for `Smart RSS Parser`
 
+### Create Sensors
 
+Add an item:
+- Give a `name` to the RSS feed source and the sensor
+- Add the link of the RSS feed (e.g. _https://yourRSSfeed.com/feed_)
+- Define a number for the max number of the latest news articles to be extracted
+  
